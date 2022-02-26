@@ -1,0 +1,18 @@
+.input-search
+  height 56px
+  border-radius: 50px;
+  outline: none;
+  padding 10px 20px
+  border: solid 2px $default;
+  transition border .1s ease
+  &.disabled
+    pointer-events none
+  &:focus, &:active
+    transition border .2s ease
+    border: solid 2px $blue;
+  &.error
+      border 1px solid $error
+      transition border .2s ease
+.error-text
+  color $error
+
